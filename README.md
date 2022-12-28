@@ -63,6 +63,6 @@ Maka, hasilnya akan seperti gambar E3 di bawah ini
 ![E3](https://user-images.githubusercontent.com/121161133/209754093-8a5531e9-4985-4cea-bfd2-9574278d43df.png)
 
        5. Akses IP Address ESP32 pada browser laptop. Dokumentasikan hasilnya dan buatlah flow chart dari program tersebut.
-Hasilnya akan seperti gambar E4 berikut ini
+Hasilnya akan seperti gambar E4 berikut ini. Dikarenakan sensor rusak, sensor tidak dapat mendeteksi suhu dan kelembaban, sehingga pada browser laptop tidak tertampil berapa derajat Celcius suhu sekitar dan berapa persen kelembabannya.
 ![E4](https://user-images.githubusercontent.com/121161133/209755148-cc1baa54-04d5-4419-bb9b-f96644d8a156.png)
 
