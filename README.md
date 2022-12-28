@@ -19,44 +19,50 @@ III. LANGKAH PERCOBAAN
 
      A.ESP32 Wi-Fi Modes dan Wifi-Scan
        1.	Pada ESP32, terdapat 3 mode akses untuk Wifi, yaitu WIFI_STA (station mode : ESP32 sebagai client yang terkoneksi ke access point), WIFI_AP (access point mode : ESP32 berperan sebagai access point), WIFI_STA_AP (access point and station : ESP32 dapat terkoneksi dengan access point yang lain).
-       2.	Buka Arduino IDE dan upload script program berikut ke ESP32 untuk melakukan scan jaringan Wi-Fi.
-       3.	Buka serial monitor dan akan muncul tampilan seperti gambar 1 di bawah ini
-![1](https://user-images.githubusercontent.com/121161133/209560941-d454459f-5e37-4c6f-b4e2-ca7432d0b715.png)
+       2.	Buka Arduino IDE dan upload script program ESP32WifiModesScan.ino ke ESP32 untuk melakukan scan jaringan Wi-Fi.
+       3.	Buka serial monitor dan hasilnya akan seperti gambar A1 di bawah ini
+![A1](https://user-images.githubusercontent.com/121161133/209753952-91df1a86-f586-4df7-b4e3-4ba9e15fb9fa.png)
 
        4.	Buatlah flow chart program diatas.
 
      B.Menghubungkan ESP32 dengan Jaringan Wi-Fi 
-       1. Buatlah program seperti script dibawah ini, kemudian upload program tersebut ke ESP32.
-       2. Buka serial monitor, kemudian dokumentasikan outputnya. 
-![2](https://user-images.githubusercontent.com/121161133/209560979-ce43e6c3-17ad-421c-a43a-a55bbfb37072.png)
+       1. Buatlah program seperti script MenghubungkandenganWifi.ino , kemudian upload program tersebut ke ESP32.
+       2. Buka serial monitor, hasilnya akan seperti gambar B1 berikut ini 
+![B1](https://user-images.githubusercontent.com/121161133/209753965-72ec2014-e9fb-4076-9423-c050fa6273ad.png)
 
        3. Buatlah flow chart program diatas.
 
      C.Menghubungkan Kembali (Re-connect) ESP32 dengan Jaringan Wi-Fi 
-       1. Buatlah program seperti script dibawah ini, kemudian upload program tersebut ke ESP32.
-       2. Buka serial monitor, kemudian matikan paket data sebentar hingga koneksi ESP32 dengan jaringna Wi-Fi terputus. Setelah itu, nyalakan lagi paket data. Dokumentasikan proses yang terjadi. 
-![3](https://user-images.githubusercontent.com/121161133/209561068-6205933a-621c-4dc5-8fd1-4d4cc7e06257.png)
+       1. Buatlah program seperti script Reconnect.ino , kemudian upload program tersebut ke ESP32.
+       2. Buka serial monitor, kemudian matikan paket data sebentar hingga koneksi ESP32 dengan jaringna Wi-Fi terputus. Setelah itu, nyalakan lagi paket data.
+Hasilnya akan seperti pada gambar C1 berikut ini
+![C1](https://user-images.githubusercontent.com/121161133/209753991-00f7734c-6924-4e9e-8ccf-47754a98580a.png)
 
        3. Buatlah flow chart program diatas.
 
      D.Mengganti Hostname ESP32 
-       1. Buatlah program seperti script dibawah ini, kemudian upload program tersebut ke ESP32.
-       2. Buka serial monitor, kemudian aktifkan mode koneksi Wi-Fi pada SmartPhone atau Laptop. Lakukan scan dan lihat daftar jaringan Wi-Fi yang tersedia. Dokumentasikan hasil keluarannya. 
-![4](https://user-images.githubusercontent.com/121161133/209561133-d6612e48-963c-42dc-a446-7304bd476dfd.png)
+       1. Buatlah program seperti script Mengganti Hostname ESP32.ino , kemudian upload program tersebut ke ESP32.
+       2. Buka serial monitor, kemudian aktifkan mode koneksi Wi-Fi pada SmartPhone atau Laptop. Lakukan scan dan lihat daftar jaringan Wi-Fi yang tersedia.
+Hasilnya akan seperti pada gambar D1 di bawah ini
+![D1](https://user-images.githubusercontent.com/121161133/209754018-d2ac4f61-0d10-47ee-9f35-74ca1210e783.png)
 
        3. Buatlah flow chart program diatas.
 
      E.Mengirim Data Sensor ke Database 
-       1. Buatlah rangkaian seperti Gambar di bawah ini.
-![5](https://user-images.githubusercontent.com/121161133/209561264-74fc29f9-529e-46f3-a631-a485e01e348a.png)
+       1. Buatlah rangkaian seperti Gambar di bawah ini. (gambar ke-2 merupakan dokumentasi rangkaian yang telah dibuat)
+![E1](https://user-images.githubusercontent.com/121161133/209754041-6c7b75c7-b828-4eb1-a6c2-fea3d1144c1b.png)
+![E2](https://user-images.githubusercontent.com/121161133/209754815-999739a0-cfb6-405c-8b78-41656a5032be.png)
 
        2. Install library Asynch Web Server dan Asycnh TCP untuk ESP 32 dengan cara download dari link berikut ini. 
           a. https://github.com/me-no-dev/ESPAsyncWebServer 
           b. https://github.com/me-no-dev/AsyncTCP/archive/master.zip 
           Install library tersebut secara manual dengan cara menyalin folder hasil ekstraksi file.zip ke direktori libarary Arduino di folder Document.
        3. Buatlah script program seperti berikut ini.
-       4. Upload program di atas. Kemudian buka serial monitor untuk mengetahui IP Address ESP32. 
-![6](https://user-images.githubusercontent.com/121161133/209561313-f9443799-5047-4aba-8b8c-40f4bd8810e4.png)
-![7](https://user-images.githubusercontent.com/121161133/209561333-5bc6d647-04b6-4a58-af2f-bdf5654e46c7.png)
+       4. Upload program seperti pada script DataSensorKeDataBase.ino , kemudian buka serial monitor untuk mengetahui IP Address ESP32.
+Maka, hasilnya akan seperti gambar E3 di bawah ini
+![E3](https://user-images.githubusercontent.com/121161133/209754093-8a5531e9-4985-4cea-bfd2-9574278d43df.png)
 
        5. Akses IP Address ESP32 pada browser laptop. Dokumentasikan hasilnya dan buatlah flow chart dari program tersebut.
+Hasilnya akan seperti gambar E4 berikut ini
+![E4](https://user-images.githubusercontent.com/121161133/209755148-cc1baa54-04d5-4419-bb9b-f96644d8a156.png)
+
